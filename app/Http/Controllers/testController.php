@@ -23,5 +23,12 @@ class testController extends Controller{
             }
         }
         echo "Sum of palindromes = $sum";
+    }
+    public function secondsPassed(){
+
+      $start = date_create('1732-04-14 00:00:00');
+      $end = date_create('2022-06-7 00:00:00');
+      echo " The number of seconds passed since 14 april 1732 are:";
+      echo $end->getTimestamp() - $start->getTimestamp(); 
     } 
 }

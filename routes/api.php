@@ -6,4 +6,4 @@ use App\Http\Controllers\testController;
 
 //testing
 // Route::get('/',[testController::class, 'showHi'])->name("show-Hi");
-// Route::get('/bye',[testController::class, 'showBye'])->name("show-Bye");
+Route::get('/palindrome',[testController::class, 'palindrome'])->name("palindrome");
